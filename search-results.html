@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Wheel Steals</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+    </head>
+   
+
+    <body id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="index.html">Wheel Steals</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+             
+                  <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
+ 
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" onclick="document.getElementById('id01').style.display='block'" >Sign In</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" onclick="document.getElementById('id02').style.display='block'" >Sign Up</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="car-profile-page.html" >Rent Car</a></li>
+                      <head>
+                          <meta name="viewport" content="width=device-width, initial-scale=1">
+                          <style>
+                          body {font-family: Arial, Helvetica, sans-serif;}
+                          
+                          /* Full-width input fields */
+                          input[type=text], input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                          }
+                          
+                          /* Set a style for all buttons */
+                          button {
+                            background-color: #4CAF50;
+                            color: white;
+                            padding: 14px 20px;
+                            margin: 8px 0;
+                            border: none;
+                            cursor: pointer;
+                            width: 100%;
+                          }
+                          
+                          button:hover {
+                            opacity: 0.8;
+                          }
+                          
+                          /* Extra styles for the cancel button */
+                          .cancelbtn {
+                            width: auto;
+                            padding: 10px 18px;
+                            background-color: #f44336;
+                          }
+                          
+                          /* Center the image and position the close button */
+                          .imgcontainer {
+                            text-align: center;
+                            margin: 24px 0 12px 0;
+                            position: relative;
+                          }
+                          
+                          img.avatar {
+                            width: 40%;
+                            border-radius: 50%;
+                          }
+                          
+                          .container {
+                            padding: 16px;
+                          }
+                          
+                          span.psw {
+                            float: right;
+                            padding-top: 16px;
+                          }
+                          
+                          /* The Modal (background) */
+                          .modal {
+                            display: none; /* Hidden by default */
+                            position: fixed; /* Stay in place */
+                            z-index: 1; /* Sit on top */
+                            left: 0;
+                            top: 0;
+                            width: 100%; /* Full width */
+                            height: 100%; /* Full height */
+                            overflow: auto; /* Enable scroll if needed */
+                            background-color: rgb(0,0,0); /* Fallback color */
+                            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                            padding-top: 60px;
+                          }
+                          
+                          /* Modal Content/Box */
+                          .modal-content {
+                            background-color: #fefefe;
+                            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                            border: 1px solid #888;
+                            width: 80%; /* Could be more or less, depending on screen size */
+                          }
+                          
+                          /* The Close Button (x) */
+                          .close {
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                            color: #000;
+                            font-size: 35px;
+                            font-weight: bold;
+                          }
+                          
+                          .close:hover,
+                          .close:focus {
+                            color: red;
+                            cursor: pointer;
+                          }
+                          
+                          /* Add Zoom Animation */
+                          .animate {
+                            -webkit-animation: animatezoom 0.6s;
+                            animation: animatezoom 0.6s
+                          }
+                          
+                          @-webkit-keyframes animatezoom {
+                            from {-webkit-transform: scale(0)} 
+                            to {-webkit-transform: scale(1)}
+                          }
+                            
+                          @keyframes animatezoom {
+                            from {transform: scale(0)} 
+                            to {transform: scale(1)}
+                          }
+                          
+                          /* Change styles for span and cancel button on extra small screens */
+                          @media screen and (max-width: 300px) {
+                            span.psw {
+                               display: block;
+                               float: none;
+                            }
+                            .cancelbtn {
+                               width: 100%;
+                            }
+                          }
+						  
+                          </style>
+                          </head>
+                          <body>
+                          
+                          <div id="id01" class="modal">
+                            
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="elonmusk.jpeg" alt="Avatar" class="avatar">
+                              </div>
+                          
+                              <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                <button type="submit">Login</button>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id01');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                          </script>
+                          
+                          </body>
+
+                    </ul>
+                  </div>
+              </div>
+          </nav>
+
+
+		  
+        <!-- Masthead-->
+        <header class="masthead">   
+
+
+
+
+
+          <head>
+            <meta charset="UTF-8">
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="msapplication-TileColor" content="#162946">
+            <meta name="theme-color" content="#e72a1a">
+            <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+			</head>
+        
+            <!-- Title -->
+            <title>Wheel Steals Listing</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<!-- Bootstrap Css -->
+		<link href="../assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Dashboard Css -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+
+		<!-- Font-awesome  Css -->
+		<link href="../assets/css/icons.css" rel="stylesheet"/>
+
+		<!--Horizontal Menu-->
+		<link href="../assets/plugins/horizontal-menu/horizontal.css" rel="stylesheet" />
+
+		<!--Select2 Plugin -->
+		<link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!-- jquery ui RangeSlider -->
+		<link href="../assets/plugins/jquery-uislider/jquery-ui.css" rel="stylesheet">
+
+		<!-- Color-Skins -->
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="" />
+
+	</head>
+	<body>
+
+		<!--Loader-->
+		<div id="global-loader">
+			<img src="../assets/images/loader.svg" class="loader-img " alt="">
+		</div>
+
+		
+
+		
+
+		<!--listing-->
+		<section class="sptb">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 col-lg-9 col-md-12">
+						<!--Lists-->
+						<div class=" mb-0">
+							<div class="">
+								<div class="item2-gl ">
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab-11">
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="cars-rental-detial.html"></a>
+															<img src="Tesla_ModelS-2020.jpeg" alt="img" class="cover-image">
+														</div>
+														
+
+														<!--
+															<div class="item-overly-trans">
+															<div class="rating-stars">
+																<input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value"  value="4">
+															</div>
+														</div>
+														-->
+														
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<a href="cars-rental-detial.html" class="text-dark"><h4 class="font-weight-semibold mt-1">2020 Tesla Model S</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, CA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$862.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="car-profile-page.html"></a>
+															<img src="dodge.png" alt="img" class="cover-image">
+														</div>
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<a href="car-profile-page.html" class="text-dark"><h4 class="font-weight-semibold mt-1"> 2020 dodge durango</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, USA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$635.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="car-profile-page.html"></a>
+															<img src="../assets/images/media/h3.png" alt="img" class="cover-image">
+														</div>
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<a href="car-profile-page.html" class="text-dark"><h4 class="font-weight-semibold mt-1">Meridian</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, CA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$526.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="car-profile-page.html"></a>
+															<img src="../assets/images/media/v1.png" alt="img" class="cover-image">
+														</div>
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<div class="rating-stars">
+																	<input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value"  value="3">
+																</div>
+																<a href="car-profile-page.html" class="text-dark"><h4 class="font-weight-semibold mt-1">Chittenden</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, CA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$256.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="car-profile-page.html"></a>
+															<img src="../assets/images/media/h1.png" alt="img" class="cover-image">
+                                                        </div>
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<div class="rating-stars">
+																	<input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value"  value="3">
+																</div>
+																<a href="cars-rental-detial.html" class="text-dark"><h4 class="font-weight-semibold mt-1">Roamer</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, CA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$987.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card overflow-hidden">
+												<div class="d-md-flex">
+													<div class="item-card9-img">
+														<div class="item-card9-imgs">
+															<a class="link" href="car-profile-page.html"></a>
+															<img src="../assets/images/media/v2.png" alt="img" class="cover-image">
+														</div>
+													</div>
+													<div class="card border-0 mb-0">
+														<div class="card-body ">
+															<div class="item-card9">
+																<div class="rating-stars">
+																	<input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value"  value="3">
+																</div>
+																<a href="car-profile-page.html" class="text-dark"><h4 class="font-weight-semibold mt-1"> Chittenden</h4></a>
+																<div class="item-card9-desc mb-2">
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-map-marker text-muted mr-1"></i> San Jose, CA</span></a>
+																	<a href="#" class="mr-4"><span class=""><i class="fa fa-calendar-o text-muted mr-1"></i>  5 days ago</span></a>
+																</div>
+																<p class=" leading-tight">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+															</div>
+														</div>
+														<div class="card-footer pt-4 pb-4 pr-4 pl-4">
+															<div class="item-card9-footer d-sm-flex">
+																<div class="item-card9-cost">
+																	<h4 class="text-dark font-weight-bold mb-0 mt-0">$746.00</h4>
+																</div>
+																<div class="ml-auto">
+																	<a href="#" class="btn btn-primary btn-sm fs-12" title="Book Now">Book Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/Listing-->
+
+			<!-- Footer-->
+			<footer class="bg-light py-5">
+				<div class="container"><div class="small text-center text-muted">Copyright © 2020 - Wheel Steals</div></div>
+				  </footer>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" ><i class="fa fa-rocket"></i></a>
+
+		<!-- JQuery js-->
+		<script src="../assets/js/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap js -->
+		<script src="../assets/plugins/bootstrap-4.3.1/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+		<!--JQueryVehiclerkline Js-->
+		<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+		<!-- Circle Progress Js-->
+		<script src="../assets/js/circle-progress.min.js"></script>
+
+		<!-- Star Rating Js-->
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Owl Carousel js -->
+		<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+		<!--Horizontal Menu-->
+		<script src="../assets/plugins/horizontal-menu/horizontal.js"></script>
+
+		<!--JQuery TouchSwipe js-->
+		<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+		<!--Select2 js -->
+		<script src="../assets/plugins/select2/select2.full.min.js"></script>
+		<script src="../assets/js/select2.js"></script>
+
+		<!-- sticky Js-->
+		<script src="../assets/js/sticky.js"></script>
+
+		<!-- Ion.RangeSlider -->
+		<script src="../assets/plugins/jquery-uislider/jquery-ui.js"></script>
+		<script src="../assets/js/slider.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!--Showmore Js-->
+		<script src="../assets/js/jquery.showmore.js"></script>
+		<script src="../assets/js/showmore.js"></script>
+
+		<!-- Cover-image Js-->
+		<script src="../assets/js/owl-carousel.js"></script>
+
+		<!-- Custom Js-->
+		<script src="../assets/js/custom.js"></script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+</body>
+</html>
+
+
+<!-- Footer-->
+<footer class="bg-light py-5">
+<div class="container"><div class="small text-center text-muted">Copyright © 2020 - Wheel Steals</div></div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

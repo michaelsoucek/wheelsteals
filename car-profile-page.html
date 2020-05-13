@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Wheel Steals</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+    </head>
+   
+
+    <body id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="index.html">Wheel Steals</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+             
+                  <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
+ 
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" onclick="document.getElementById('id01').style.display='block'" >Sign In</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" onclick="document.getElementById('id02').style.display='block'" >Sign Up</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="car-profile-page.html" >Rent Car</a></li>
+                      <head>
+                          <meta name="viewport" content="width=device-width, initial-scale=1">
+                          <style>
+                          body {font-family: Arial, Helvetica, sans-serif;}
+                          
+                          /* Full-width input fields */
+                          input[type=text], input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                          }
+                          
+                          /* Set a style for all buttons */
+                          button {
+                            background-color: #4CAF50;
+                            color: white;
+                            padding: 14px 20px;
+                            margin: 8px 0;
+                            border: none;
+                            cursor: pointer;
+                            width: 100%;
+                          }
+                          
+                          button:hover {
+                            opacity: 0.8;
+                          }
+                          
+                          /* Extra styles for the cancel button */
+                          .cancelbtn {
+                            width: auto;
+                            padding: 10px 18px;
+                            background-color: #f44336;
+                          }
+                          
+                          /* Center the image and position the close button */
+                          .imgcontainer {
+                            text-align: center;
+                            margin: 24px 0 12px 0;
+                            position: relative;
+                          }
+                          
+                          img.avatar {
+                            width: 40%;
+                            border-radius: 50%;
+                          }
+                          
+                          .container {
+                            padding: 16px;
+                          }
+                          
+                          span.psw {
+                            float: right;
+                            padding-top: 16px;
+                          }
+                          
+                          /* The Modal (background) */
+                          .modal {
+                            display: none; /* Hidden by default */
+                            position: fixed; /* Stay in place */
+                            z-index: 1; /* Sit on top */
+                            left: 0;
+                            top: 0;
+                            width: 100%; /* Full width */
+                            height: 100%; /* Full height */
+                            overflow: auto; /* Enable scroll if needed */
+                            background-color: rgb(0,0,0); /* Fallback color */
+                            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                            padding-top: 60px;
+                          }
+                          
+                          /* Modal Content/Box */
+                          .modal-content {
+                            background-color: #fefefe;
+                            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                            border: 1px solid #888;
+                            width: 80%; /* Could be more or less, depending on screen size */
+                          }
+                          
+                          /* The Close Button (x) */
+                          .close {
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                            color: #000;
+                            font-size: 35px;
+                            font-weight: bold;
+                          }
+                          
+                          .close:hover,
+                          .close:focus {
+                            color: red;
+                            cursor: pointer;
+                          }
+                          
+                          /* Add Zoom Animation */
+                          .animate {
+                            -webkit-animation: animatezoom 0.6s;
+                            animation: animatezoom 0.6s
+                          }
+                          
+                          @-webkit-keyframes animatezoom {
+                            from {-webkit-transform: scale(0)} 
+                            to {-webkit-transform: scale(1)}
+                          }
+                            
+                          @keyframes animatezoom {
+                            from {transform: scale(0)} 
+                            to {transform: scale(1)}
+                          }
+                          
+                          /* Change styles for span and cancel button on extra small screens */
+                          @media screen and (max-width: 300px) {
+                            span.psw {
+                               display: block;
+                               float: none;
+                            }
+                            .cancelbtn {
+                               width: 100%;
+                            }
+                          }
+						  
+                          </style>
+                          </head>
+                          <body>
+                          
+                          <div id="id01" class="modal">
+                            
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="elonmusk.jpeg" alt="Avatar" class="avatar">
+                              </div>
+                          
+                              <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                <button type="submit">Login</button>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id01');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                          </script>
+                          
+                          </body>
+
+                    </ul>
+                  </div>
+              </div>
+          </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">   
+
+
+
+
+
+          <head>
+            <meta charset="UTF-8">
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="msapplication-TileColor" content="#162946">
+            <meta name="theme-color" content="#e72a1a">
+            <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        
+            <!-- Title -->
+            <title>Wheel Steals Listing</title>
+        
+            <!-- Bootstrap Css -->
+            <link href="../assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+        
+            <!-- Dashboard Css -->
+            <link href="../assets/css/style.css" rel="stylesheet" />
+        
+            <!-- Font-awesome  Css -->
+            <link href="../assets/css/icons.css" rel="stylesheet"/>
+        
+            <!--Horizontal Menu-->
+            <link href="../assets/plugins/horizontal-menu/horizontal.css" rel="stylesheet" />
+        
+            <!--Bootstrap-daterangepicker css-->
+            <link  href="../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+        
+            <!-- Owl Theme css-->
+            <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+        
+            <!--Select2 Plugin -->
+            <link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+        
+            <!-- Custom scroll bar css-->
+            <link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+        
+            <!-- Color-Skins -->
+            <link id="theme" rel="stylesheet" type="text/css" media="all" href="../assets/color-skins/color13.css" />
+        
+          </head>
+          <body>
+        
+        
+           
+        
+            <!--Section-->
+            <div>
+              <div class="cover-image sptb-1 bg-background" data-image-src="">
+                <div class="header-text1 mb-0">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-12 col-md-12 d-block mx-auto">
+                        <div class="text-center text-white ">
+                          <h1 class="mb-5"><span class="font-weight-bold"></span> Car Details </h1>
+                        </div>
+                        <div class="search-background mt-3">
+                          <div class="form row no-gutters">
+                            <div class="form-group  col-xl-6 col-lg-5 col-md-12 mb-0">
+								
+                              <input type="text" class="form-control input-lg" id="text" placeholder="Enter location">
+							</div>
+							
+
+
+
+                            <form action="/action_page.php">
+
+								<input type="date" name="CheckIn">
+								<input type="submit" value="Send">
+							  </form>
+								
+                              </select>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-12 mb-0">
+                              <a href="search-results.html" class="btn btn-lg btn-block btn-primary br-bl-0 br-tl-0">Search</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /header-text -->
+              </div>
+            </div>
+            <!--Section-->
+]
+        
+			<!--listing-->
+			
+            <section class="sptb">	
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-8 col-lg-8 col-md-12">
+                    <!--Classified Description-->
+                    <div class="card overflow-hidden">
+                      <div class="card-body">
+                        <div class="item-det mb-4">
+                          <a href="#" class="text-dark"><h3 >2020 Tesla Model S</h3></a>
+                          <div class=" d-flex">
+                            <ul class="d-flex mb-0">
+                              <li class="mr-5"><a href="#" class="icons"><i class="ti-car text-muted mr-1 fs-18"></i> Sedan</a></li>
+                              <li class="mr-5"><a href="#" class="icons"><i class="ti-location-pin text-muted mr-1"></i>San Jose, CA</a></li>
+                            </ul>
+        
+                          </div>
+                        </div>
+                        <div class="product-slider">
+                          <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active"> <img src="Tesla_ModelS-2020.jpeg" alt="img"> </div>
+                              
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                              <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                          <div class="clearfix">
+                            <div id="thumbcarousel" class="carousel thumbcarousel slide" data-interval="false">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="Tesla_ModelS-2020.jpeg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="Tesla_ModelS-2020.jpeg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="Tesla_ModelS-2020.jpeg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="Tesla_ModelS-2020.jpeg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="Tesla_ModelS-2020.jpeg" alt="img"></div>
+                                </div>
+                                <div class="carousel-item ">
+                                  <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="../assets/images/media/gallery/1.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="../assets/images/media/gallery/2.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="../assets/images/media/gallery/3.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="../assets/images/media/gallery/4.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="9" class="thumb"><img src="../assets/images/media/gallery/5.jpg" alt="img"></div>
+                                </div>
+                                <div class="carousel-item ">
+                                  <div data-target="#carousel" data-slide-to="10" class="thumb"><img src="../assets/images/media/gallery/6.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="11" class="thumb"><img src="../assets/images/media/gallery/7.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="12" class="thumb"><img src="../assets/images/media/gallery/8.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="13" class="thumb"><img src="../assets/images/media/gallery/9.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="14" class="thumb"><img src="../assets/images/media/gallery/10.jpg" alt="img"></div>
+                                </div>
+                                <div class="carousel-item ">
+                                  <div data-target="#carousel" data-slide-to="15" class="thumb"><img src="../assets/images/media/gallery/11.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="16" class="thumb"><img src="../assets/images/media/gallery/12.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="17" class="thumb"><img src="../assets/images/media/gallery/13.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="18" class="thumb"><img src="../assets/images/media/gallery/14.jpg" alt="img"></div>
+                                  <div data-target="#carousel" data-slide-to="19" class="thumb"><img src="../assets/images/media/gallery/v6.png" alt="img"></div>
+                                </div>
+        
+                              </div>
+                        
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="">
+                        <div class="border-0">
+                          <div class="wideget-user-tab wideget-user-tab3">
+                            <div class="tab-menu-heading">
+                              <div class="tabs-menu1">
+                                <ul class="nav">
+                                  <li class=""><a href="#tab-1" class="active" data-toggle="tab">Overview</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-content border-left border-right border-top br-tr-3 p-5 bg-white">
+                            <div class="tab-pane active" id="tab-1">
+                              <h3 class="card-title mb-3 font-weight-semibold">Overview</h3>
+                              <div class="mb-4">
+                                <p>2020 Tesla Model S, good condition, negotiate charges with me</p>
+                              </div>
+                              <h4 class="mb-4">Specifications</h4>
+                              <div class="row">
+                                <div class="col-xl-12 col-md-12">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered w-100 m-0 text-nowrap ">
+                                      <tbody>
+                                        <tr>
+                                          <td><span class="font-weight-bold">Fuel Type :</span> Electric</td>
+                                          <td><span class="font-weight-bold">Brakes :</span> Front , Rear</td>
+                                        </tr>
+                                        <tr>
+                                          <td><span class="font-weight-bold">Engine :</span> *** </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered border-top mb-0">
+                                      <tbody>
+                                        <tr>
+                                          <td>Power Steering</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Power Windows Front</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Air Conditioner</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Passenger Airbag</td>
+                                          <td><i class="icon icon-close text-danger"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Fog Lights - Front</td>
+                                          <td><i class="icon icon-close text-danger"></i></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered border-top mb-0">
+                                      <tbody>
+        
+                                        <tr>
+                                          <td>Anti Lock Braking System</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Driver Airbag</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Wheel Covers</td>
+                                          <td><i class="icon icon-check text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Automatic Climate Control</td>
+                                          <td><i class="icon icon-close text-danger"></i></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="tab-4">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered border-top mb-0">
+                                      <tbody>
+                                        <tr>
+                                          <td>ARAI Mileage</td>
+                                          <td>24.7 km/kg</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Engine Displacement (cc)</td>
+                                          <td>796</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Max Torque (nm@rpm)</td>
+                                          <td>69Nm@3500rpm</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Seating Capacity</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Boot Space (Litres)</td>
+                                          <td>177</td>
+                                        </tr>
+        
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="tab-5">
+                              <ul class="list-unstyled video-list-thumbs row ">
+                                <li class="mb-0">
+                                  <a data-toggle="modal" data-target="#homeVideo">
+                                    <img src="../assets/images/media/others/v1.jpg" alt="Barca" class="img-responsive">
+                                    <span class="mdi mdi-arrow-right-drop-circle-outline text-white"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="pt-4 pb-4 pl-5 pr-5 border-top border-left border-right bg-white">
+                            <div class="list-id">
+                              <div class="row">
+                                <div class="col col-auto">
+                                  Posted By <a class="mb-0 font-weight-bold">Elon Musk</a> / 1st Dec 20xx
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer bg-white border-left border-right border-bottom br-br-3 br-bl-3">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Classified Description-->
+        
+                    
+                    <div class="card mb-lg-0">
+                      
+                    </div>
+                  </div>
+        
+                  <!--Right Side Content-->
+                  <div class="col-xl-4 col-lg-4 col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="mb-4">Book Car</h3>
+                        <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <div class="form-group search-cars1">
+                        </div>
+                        <div class="input-group mb-4">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-map-marker fs-16 lh-0 op-6"></i>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Pickup location">
+                        </div>
+                        <div class="input-group mb-4">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-map-marker fs-16 lh-0 op-6"></i>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Drop location">
+                        </div>
+                        
+                        <a class="btn btn-primary btn-lg btn-block" href="#">Book Car</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Posted By</h3>
+                      </div>
+                      <div class="card-body  item-user">
+                        <div class="profile-pic mb-0">
+                          <img src="elonmusk.jpeg"  width="300" height="300" class="brround avatar-xxl" alt="user">
+                          <div >
+                            <a href="userprofile.html" class="text-dark"><h4 class="mt-3 mb-1 font-weight-semibold">Elon Musk</h4></a>
+                            <span class="text-muted">Member Since May 2020</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body item-user">
+                        <h4 class="mb-4">Contact Info</h4>
+                        <div>
+                          <h6><span class="font-weight-semibold"><i class="fa fa-envelope mr-3 mb-2"></i></span><a href="#" class="text-body"> student.sjsu.edu</a></h6>
+                          <h6><span class="font-weight-semibold"><i class="fa fa-phone mr-3  mb-2"></i></span><a href="#" class="text-body"> 123-456-7890</a></h6>
+                          <h6><span class="font-weight-semibold"><i class="fa fa-map-marker mr-3 "></i></span><a class="text-body"> San Jose, California, USA</a></h6>
+                      </div>
+                    </div>
+                    
+        
+                </div>
+              </div>
+            </section>
+                    
+   
+
+			<!-- Footer-->
+			<footer class="bg-light py-5">
+				<div class="container"><div class="small text-center text-muted">Copyright © 2020 - Wheel Steals</div></div>
+				  </footer>
+        
+        
+            <!-- JQuery js-->
+            <script src="../assets/js/jquery-3.2.1.min.js"></script>
+        
+            <!-- Bootstrap js -->
+            <script src="../assets/plugins/bootstrap-4.3.1/js/popper.min.js"></script>
+            <script src="../assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        
+            <!--JQueryVehiclerkline Js-->
+            <script src="../assets/js/jquery.sparkline.min.js"></script>
+        
+        
+        
+            <!--Moment js-->
+            <script src="../assets/plugins/moment/moment.min.js"></script>
+        
+            <!--Horizontal Menu-->
+            <script src="../assets/plugins/horizontal-menu/horizontal.js"></script>
+        
+            <!--JQuery TouchSwipe js-->
+            <script src="../assets/js/jquery.touchSwipe.min.js"></script>
+        
+            <!--Bootstrap-daterangepicker js-->
+            <script src="../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script src="../assets/plugins/bootstrap-daterangepicker/date.js"></script>
+        
+            <!--Select2 js -->
+            <script src="../assets/plugins/select2/select2.full.min.js"></script>
+            <script src="../assets/js/select2.js"></script>
+        
+            <!-- Count Down-->
+            <script src="../assets/plugins/count-down/jquery.lwtCountdown-1.0.js"></script>
+        
+            <!-- Custom scroll bar Js-->
+            <script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+        
+            <!-- sticky Js-->
+            <script src="../assets/js/sticky.js"></script>
+        
+            <!-- Vertical scroll bar Js-->
+            <script src="../assets/plugins/vertical-scroll/jquery.bootstrap.newsbox.js"></script>
+            <script src="../assets/plugins/vertical-scroll/vertical-scroll.js"></script>
+        
+            <!-- Swipe Js-->
+            <script src="../assets/js/swipe.js"></script>
+        
+            <!-- Custom Js-->
+            <script src="../assets/js/custom.js"></script>
+          </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </header>
+
+
+	</body>
+</html>
+
+
+   <!-- Footer-->
+   <footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Wheel Steals</div></div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+  </body>
+</html>
